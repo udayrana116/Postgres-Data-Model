@@ -17,7 +17,6 @@ Tools used:-
 > I performed this project using an Ubuntu Virtualbox.
 > This link can be used to get started:-
 > https://www.youtube.com/watch?v=rJ9ysibH768&t=2s&ab_channel=GEEKrar
-:fontawesome-brands-youtube:{ .youtube }
 
 Pre-requisite to use the files for project setup:-
 - Docker installation:-
