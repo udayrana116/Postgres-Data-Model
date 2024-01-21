@@ -12,6 +12,8 @@ This project is to showcase following skills:-
 Tools used:-
 - Docker Container
 - Jutpyter notebook
+- Bash Script
+- PostgreSQL
 
 > [!NOTE]
 > I performed this project using an Ubuntu Virtualbox.
@@ -40,6 +42,13 @@ docker network create --driver bridge my_bridge_network
 
 Following is a breakdown for Data Model:-
 - Run the following containers:-
+    1. Running the bash script 'docker_run.sh' in the Docker folder with following caommand will run all the containers and set them up for use:-
+        > bash docker_run.sh 
+        Or the following steps can be used to do it manually.
+
+        > [!NOTE]
+        > Some customization in file location might be required as per the user environment.
+
     1. Jupyter Notebook with Dockerfile
         * Files are saved at:-
         > ./Docker/JupyterNotebook_Docker
@@ -65,10 +74,12 @@ Following is a breakdown for Data Model:-
         docker network disconnect <bridge_name> <conatiner_id>
 
         docker network connect my_bridge_network <conatiner_id>
+
+        docker network inspect <bridge_name>
         ```
         Do this for both containers to have all running containers under one network.
     3. After this run following Notebooks:-
-    
+
     > `./Notebooks/DataModel.ipynb`
 
     > `./Notebooks/Wealth_Account Data Model.ipynb`
