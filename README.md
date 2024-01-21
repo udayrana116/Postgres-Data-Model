@@ -46,8 +46,8 @@ Following is a breakdown for Data Model:-
         > bash docker_run.sh 
         Or the following steps can be used to do it manually.
 
-        > [!NOTE]
-        > Some customization in file location might be required as per the user environment.
+> [!NOTE]
+> Some customization in file location might be required as per the user environment.
 
     1. Jupyter Notebook with Dockerfile
         * Files are saved at:-
