@@ -67,3 +67,8 @@ Following is a breakdown for Data Model:-
         docker network connect my_bridge_network <conatiner_id>
         ```
         Do this for both containers to have all running containers under one network.
+    3. After this run following Notebooks:-
+    
+    > `./Notebooks/DataModel.ipynb`
+
+    > `./Notebooks/Wealth_Account Data Model.ipynb`
