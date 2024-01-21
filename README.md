@@ -49,36 +49,37 @@ Following is a breakdown for Data Model:-
 > [!NOTE]
 > Some customization in file location might be required as per the user environment.
 
-    1. Jupyter Notebook with Dockerfile
-        * Files are saved at:-
-        > ./Docker/JupyterNotebook_Docker
-        * Following commands are to run the container:-
-        ```docker
-        docker run -dit --rm --name notebook --net my_bridge_network -p 8888:8888 -v /media/sf_Virtual_Box/Postgres-Data-Model/Notebooks:/src/notebooks udayrana116/everest:1.01
-        ```
-        > This from the command will run at my_bridge_network.
+1. Jupyter Notebook with Dockerfile
+    * Files are saved at:-
+    > ./Docker/JupyterNotebook_Docker
+    * Following commands are to run the container:-
+    ```docker
+    docker run -dit --rm --name notebook --net my_bridge_network -p 8888:8888 -v /media/sf_Virtual_Box/Postgres-Data-Model/Notebooks:/src/notebooks udayrana116/everest:1.01
+    ```
+    > This from the command will run at my_bridge_network.
 
-    2. Postgres_pgAdmin with docker-compose
-        * Files are saved at:-
-        > ./Docker/Postgres_pgAdmin
-        * Following commands are to run the container:-
-        ```docker
-        docker-compose up -d
-        ```
-        > This will run automatically at their default container. So need to be 
-        > disconnected and attached to my_bridge_network
-        > Use following commands:-
-        ```docker
-        docker network ls 
+2. Postgres_pgAdmin with docker-compose
+    * Files are saved at:-
+    > ./Docker/Postgres_pgAdmin
+    * Following commands are to run the container:-
+    ```docker
+    docker-compose up -d
+    ```
+    > This will run automatically at their default container. So need to be 
+    > disconnected and attached to my_bridge_network
+    > Use following commands:-
+    ```docker
+    docker network ls 
 
-        docker network disconnect <bridge_name> <conatiner_id>
+    docker network disconnect <bridge_name> <conatiner_id>
 
-        docker network connect my_bridge_network <conatiner_id>
+    docker network connect my_bridge_network <conatiner_id>
 
-        docker network inspect <bridge_name>
-        ```
-        Do this for both containers to have all running containers under one network.
-    3. After this run following Notebooks:-
+    docker network inspect <bridge_name>
+    ```
+    Do this for both containers to have all running containers under one network.
+    
+3. After this run following Notebooks:-
 
     > `./Notebooks/DataModel.ipynb`
 
