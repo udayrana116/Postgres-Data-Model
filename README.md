@@ -7,7 +7,7 @@ This project is to showcase following skills:-
 
 2. Setting up Data Warehouse Model
 
-![Alt text](./Images/Studends_DataModel.jpg "a title")
+![Alt text](./Images/accounts_DataWarehouse.jpg "accounts_DataWarehouse.jpg")
 
 Tools used:-
 - Docker Container
