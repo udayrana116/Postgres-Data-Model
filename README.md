@@ -1,13 +1,17 @@
 # Postgres-Data-Model
 
-This project is to showcase following skills:-
-1. Setting up Data Model
+This project is to showcase following tasks:-
+1. Setting up Student Data Model
 
 ![Alt text](./Images/Studends_DataModel.jpg "students table")
 
-2. Setting up Data Warehouse Model
+2. Setting up Accounts Data Model
 
-![Alt text](./Images/accounts_DataWarehouse.jpg "accounts_DataWarehouse.jpg")
+![Alt text](./Images/accounts_DataModel.jpg "accounts_DataModel.jpg")
+
+3. Setting up DVD Rental Data Warehouse
+
+
 
 Tools used:-
 - Docker Container
